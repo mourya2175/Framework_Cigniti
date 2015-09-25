@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>TestNG:  Running scripts On IE10</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Running scripts On IE10</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 17 14:48:56 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1324 seconds (1324627 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.scripts.InteractionDefaultValue_Test.InteractionDefaultValue_Test()'><b>InteractionDefaultValue_Test</b><br>Test class: com.demo.scripts.InteractionDefaultValue_Test</td>
+<td></td>
+<td>84</td>
+<td>com.demo.scripts.InteractionDefaultValue_Test@d4342c2</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_MobileTest.InteractionFormatting_MobileTest()'><b>InteractionFormatting_MobileTest</b><br>Test class: com.demo.scripts.InteractionFormatting_MobileTest</td>
+<td></td>
+<td>84</td>
+<td>com.demo.scripts.InteractionFormatting_MobileTest@419c5f1a</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_Test.InteractionFormatting_Test()'><b>InteractionFormatting_Test</b><br>Test class: com.demo.scripts.InteractionFormatting_Test</td>
+<td></td>
+<td>106</td>
+<td>com.demo.scripts.InteractionFormatting_Test@3c9d0b9d</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFullFlow_Test.InteractionFullFlow_Test()'><b>InteractionFullFlow_Test</b><br>Test class: com.demo.scripts.InteractionFullFlow_Test</td>
+<td></td>
+<td>71</td>
+<td>com.demo.scripts.InteractionFullFlow_Test@2f112965</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_MobileTest.InteractionLanguage_MobileTest()'><b>InteractionLanguage_MobileTest</b><br>Test class: com.demo.scripts.InteractionLanguage_MobileTest</td>
+<td></td>
+<td>128</td>
+<td>com.demo.scripts.InteractionLanguage_MobileTest@163e4e87</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_Test.InteractionLanguage_Test()'><b>InteractionLanguage_Test</b><br>Test class: com.demo.scripts.InteractionLanguage_Test</td>
+<td></td>
+<td>129</td>
+<td>com.demo.scripts.InteractionLanguage_Test@56de5251</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_MobileTest.InteractionReferenceValue_MobileTest()'><b>InteractionReferenceValue_MobileTest</b><br>Test class: com.demo.scripts.InteractionReferenceValue_MobileTest</td>
+<td></td>
+<td>103</td>
+<td>com.demo.scripts.InteractionReferenceValue_MobileTest@1a04f701</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_Test.InteractionReferenceValue_Test()'><b>InteractionReferenceValue_Test</b><br>Test class: com.demo.scripts.InteractionReferenceValue_Test</td>
+<td></td>
+<td>111</td>
+<td>com.demo.scripts.InteractionReferenceValue_Test@4e91d63f</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_MobileTest.InteractionValidationMsgs_MobileTest()'><b>InteractionValidationMsgs_MobileTest</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_MobileTest</td>
+<td></td>
+<td>139</td>
+<td>com.demo.scripts.InteractionValidationMsgs_MobileTest@2bbf180e</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_Test.InteractionValidationMsgs_Test()'><b>InteractionValidationMsgs_Test</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_Test</td>
+<td></td>
+<td>186</td>
+<td>com.demo.scripts.InteractionValidationMsgs_Test@43301423</td></tr>
+</table><p>
+</body>
+</html>

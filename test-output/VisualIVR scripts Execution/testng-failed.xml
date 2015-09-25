@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" verbose="0" name="Failed suite [VisualIVR scripts Execution]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="view" value="web"/>
+  <test name="Running scripts On Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="view" value="web"/>
+    <classes>
+      <class name="com.demo.testScripts.smoke.DemoScript1">
+        <methods>
+          <include name="close"/>
+          <include name="suiteFirst"/>
+          <include name="tearDownFirefox"/>
+          <include name="reportHeader"/>
+          <include name="tearDown"/>
+          <include name="first1"/>
+          <include name="first"/>
+          <include name="first"/>
+        </methods>
+      </class> <!-- com.demo.testScripts.smoke.DemoScript1 -->
+      <class name="com.demo.testScripts.smoke.DemoScript2">
+        <methods>
+          <include name="close"/>
+          <include name="trackOrder_Test"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.testScripts.smoke.DemoScript2 -->
+    </classes>
+  </test> <!-- Running scripts On Chrome(failed) -->
+</suite> <!-- Failed suite [VisualIVR scripts Execution] -->

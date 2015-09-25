@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VisualIVR scripts Execution" verbose="0" parallel="tests"
+	thread-count="10">
+<!-- <test name="Running scripts On Firefox">
+		<parameter name="browser" value="Firefox" />
+			<parameter name="view" value="Web" />
+		<classes>
+		<class name="com.demo.testScripts.smoke.DemoScript1" />
+		<class name="com.demo.testScripts.smoke.DemoScript2" />
+		</classes>
+	</test> -->
+
+<!--  <test name="Running scripts On IE">
+		<parameter name="browser" value="IE" />
+		<parameter name="view" value="web" />
+		<classes>
+		<class name="com.demo.testScripts.smoke.DemoScript1" />
+		<class name="com.demo.testScripts.smoke.DemoScript2" />
+		</classes>
+	</test> -->
+
+	 <test name="Running scripts On Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="view" value="web" />
+		<classes>
+		<class name="com.demo.testScripts.smoke.DemoScript3" />
+		<!-- <class name="com.demo.testScripts.smoke.DemoScript2" /> -->
+		</classes>
+	</test> 
+
+</suite>

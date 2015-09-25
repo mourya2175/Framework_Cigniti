@@ -1,0 +1,8 @@
+{
+    "phoneNumber" : "19",
+    "dnId" : "",
+    "groupName" : "",
+    "enabled" : true,
+    "lastUsedTimestamp" : 1415701181644,
+    "lastModified" : 1415701181645
+  }

@@ -1,0 +1,593 @@
+<html>
+<head>
+<title>TestNG:  Running scripts On IE9</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Running scripts On IE9</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/9</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 17 14:48:56 IST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>96 seconds (96198 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_MobileTest.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionFormatting_MobileTest<br>Parameters: org.testng.TestRunner@62a6a238, IE, 9, Windows, 7</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: 2 sessions are currently being used. Please upgrade to add more parallel sessions. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.53 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;HW0977&apos;, ip: &apos;10.10.99.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at com.gallop.accelerators.TestEngine.first(TestEngine.java:161)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1430601101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1430601101'><pre>org.openqa.selenium.WebDriverException: 2 sessions are currently being used. Please upgrade to add more parallel sessions. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.53 seconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;
+System info: host: &apos;HW0977&apos;, ip: &apos;10.10.99.55&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_25&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:240)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:126)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+	at com.gallop.accelerators.TestEngine.first(TestEngine.java:161)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_MobileTest@25d250c6</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_MobileTest.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionFormatting_MobileTest<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606326341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1606326341'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_MobileTest@25d250c6</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_Test.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionFormatting_Test<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace652827474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace652827474'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_Test@229d10bd</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_MobileTest.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionLanguage_MobileTest<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1318098462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1318098462'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_MobileTest@4445629</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_Test.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionLanguage_Test<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1741498461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1741498461'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_Test@45b9a632</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_MobileTest.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionReferenceValue_MobileTest<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908864916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908864916'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_MobileTest@7a4ccb53</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_Test.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionReferenceValue_Test<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace35939457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace35939457'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_Test@309e345f</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_MobileTest.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_MobileTest<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace745828738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace745828738'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_MobileTest@18ce0030</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_Test.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_Test<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1277126648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1277126648'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_Test@47542153</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFullFlow_Test.close()'><b>close</b><br>Test class: com.demo.scripts.InteractionFullFlow_Test<br>Parameters: IE</td>
+<td><div><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1019848265", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1019848265'><pre>java.lang.NullPointerException
+	at com.gallop.accelerators.TestEngine.close(TestEngine.java:386)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:225)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:114)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFullFlow_Test@33afa13b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_Test.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionFormatting_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_Test@229d10bd</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_MobileTest.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionLanguage_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_MobileTest@4445629</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_Test.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionLanguage_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_Test@45b9a632</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_MobileTest.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionReferenceValue_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_MobileTest@7a4ccb53</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_Test.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionReferenceValue_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_Test@309e345f</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_MobileTest.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_MobileTest@18ce0030</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_Test.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_Test@47542153</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFullFlow_Test.first()'><b>first</b><br>Test class: com.demo.scripts.InteractionFullFlow_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFullFlow_Test@33afa13b</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_MobileTest.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionFormatting_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_MobileTest@25d250c6</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_Test.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionFormatting_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_Test@229d10bd</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_MobileTest.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionLanguage_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_MobileTest@4445629</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_Test.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionLanguage_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_Test@45b9a632</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_MobileTest.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionReferenceValue_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_MobileTest@7a4ccb53</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_Test.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionReferenceValue_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_Test@309e345f</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_MobileTest.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_MobileTest@18ce0030</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_Test.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_Test@47542153</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFullFlow_Test.reportHeader()'><b>reportHeader</b><br>Test class: com.demo.scripts.InteractionFullFlow_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFullFlow_Test@33afa13b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.scripts.InteractionDefaultValue_Test.InteractionDefaultValue_Test()'><b>InteractionDefaultValue_Test</b><br>Test class: com.demo.scripts.InteractionDefaultValue_Test</td>
+<td></td>
+<td>78</td>
+<td>com.demo.scripts.InteractionDefaultValue_Test@56a6d5a6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_MobileTest.InteractionFormatting_MobileTest()'><b>InteractionFormatting_MobileTest</b><br>Test class: com.demo.scripts.InteractionFormatting_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_MobileTest@25d250c6</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFormatting_Test.InteractionFormatting_Test()'><b>InteractionFormatting_Test</b><br>Test class: com.demo.scripts.InteractionFormatting_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFormatting_Test@229d10bd</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionFullFlow_Test.InteractionFullFlow_Test()'><b>InteractionFullFlow_Test</b><br>Test class: com.demo.scripts.InteractionFullFlow_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionFullFlow_Test@33afa13b</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_MobileTest.InteractionLanguage_MobileTest()'><b>InteractionLanguage_MobileTest</b><br>Test class: com.demo.scripts.InteractionLanguage_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_MobileTest@4445629</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionLanguage_Test.InteractionLanguage_Test()'><b>InteractionLanguage_Test</b><br>Test class: com.demo.scripts.InteractionLanguage_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionLanguage_Test@45b9a632</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_MobileTest.InteractionReferenceValue_MobileTest()'><b>InteractionReferenceValue_MobileTest</b><br>Test class: com.demo.scripts.InteractionReferenceValue_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_MobileTest@7a4ccb53</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionReferenceValue_Test.InteractionReferenceValue_Test()'><b>InteractionReferenceValue_Test</b><br>Test class: com.demo.scripts.InteractionReferenceValue_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionReferenceValue_Test@309e345f</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_MobileTest.InteractionValidationMsgs_MobileTest()'><b>InteractionValidationMsgs_MobileTest</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_MobileTest</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_MobileTest@18ce0030</td></tr>
+<tr>
+<td title='com.demo.scripts.InteractionValidationMsgs_Test.InteractionValidationMsgs_Test()'><b>InteractionValidationMsgs_Test</b><br>Test class: com.demo.scripts.InteractionValidationMsgs_Test</td>
+<td></td>
+<td>0</td>
+<td>com.demo.scripts.InteractionValidationMsgs_Test@47542153</td></tr>
+</table><p>
+</body>
+</html>

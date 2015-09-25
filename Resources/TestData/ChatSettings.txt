@@ -1,0 +1,22 @@
+{
+    "id": "54a94301445f090b411ce038",
+    "tenantSettingsType": "CHAT_SETTINGS_TYPE",
+    "selectedAfterHoursSettingId": "541aefaee4b0d54ad17513ec",
+    "afterHoursSettings": [
+        {
+            "id": "541aefaee4b0d54ad17513ec",
+            "name": "aaa"
+        },
+        {
+            "id": "541aefd9e4b0d54ad17513f2",
+            "name": "holidays"
+        }
+    ],
+    "chatProviderProperties": {
+        "Live Person": {
+            "account": "P58383873",
+            "appKey": "2e6bc5f5d99d4e1eaeb251ccda5cee66"
+        }
+    },
+    "activeChatProvider": "Live Person"
+}

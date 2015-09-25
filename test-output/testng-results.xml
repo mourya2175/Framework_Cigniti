@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="VisualIVR scripts Execution" duration-ms="8779" started-at="2015-09-09T10:37:21Z" finished-at="2015-09-09T10:37:30Z">
+    <groups>
+    </groups>
+    <test name="Running scripts On Chrome" duration-ms="8779" started-at="2015-09-09T10:37:21Z" finished-at="2015-09-09T10:37:30Z">
+      <class name="com.demo.testScripts.smoke.DemoScript3">
+        <test-method status="PASS" signature="suiteFirst(org.testng.ITestContext)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="suiteFirst" is-config="true" duration-ms="33" started-at="2015-09-09T16:07:21Z" finished-at="2015-09-09T16:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteFirst -->
+        <test-method status="PASS" signature="first(org.testng.ITestContext)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="first" is-config="true" duration-ms="0" started-at="2015-09-09T16:07:21Z" finished-at="2015-09-09T16:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method status="PASS" signature="first(org.testng.ITestContext, java.lang.String, java.lang.String)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="first" is-config="true" duration-ms="1" started-at="2015-09-09T16:07:21Z" finished-at="2015-09-09T16:07:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first -->
+        <test-method status="PASS" signature="reportHeader(java.lang.reflect.Method, org.testng.ITestContext, java.lang.String)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="reportHeader" is-config="true" duration-ms="2543" started-at="2015-09-09T16:07:21Z" finished-at="2015-09-09T16:07:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.testScripts.smoke.DemoScript3.verifyHeaderLink() throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportHeader -->
+        <test-method status="PASS" signature="verifyHeaderLink()[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="verifyHeaderLink" duration-ms="4988" started-at="2015-09-09T16:07:24Z" finished-at="2015-09-09T16:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaderLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="tearDown" is-config="true" duration-ms="1238" started-at="2015-09-09T16:07:29Z" finished-at="2015-09-09T16:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="first1(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="first1" is-config="true" duration-ms="3" started-at="2015-09-09T16:07:30Z" finished-at="2015-09-09T16:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first1 -->
+        <test-method status="PASS" signature="close(java.lang.String)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="close" is-config="true" duration-ms="0" started-at="2015-09-09T16:07:30Z" finished-at="2015-09-09T16:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="PASS" signature="tearDownFirefox(org.testng.ITestContext, java.lang.String)[pri:0, instance:com.demo.testScripts.smoke.DemoScript3@189471a]" name="tearDownFirefox" is-config="true" duration-ms="1" started-at="2015-09-09T16:07:30Z" finished-at="2015-09-09T16:07:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@77b490]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownFirefox -->
+      </class> <!-- com.demo.testScripts.smoke.DemoScript3 -->
+    </test> <!-- Running scripts On Chrome -->
+  </suite> <!-- VisualIVR scripts Execution -->
+</testng-results>

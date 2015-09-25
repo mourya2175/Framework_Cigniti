@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="0" name="Failed suite [Parallel Execution]" parallel="tests">
+  <parameter name="os" value="Windows"/>
+  <parameter name="browser" value="IE"/>
+  <parameter name="os_version" value="7"/>
+  <parameter name="browser_version" value="9"/>
+  <test name="Running Interaction On Firefox(failed)" parallel="tests">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="IE"/>
+    <parameter name="os_version" value="7"/>
+    <parameter name="browser_version" value="9"/>
+    <classes>
+      <class name="com.demo.scripts.InteractionDefaultValue_MobileTest">
+        <methods>
+          <include name="close"/>
+          <include name="tearDownChrome"/>
+          <include name="first"/>
+          <include name="first"/>
+          <include name="tearDown"/>
+          <include name="InteractionDefaultValue_MobileTest"/>
+          <include name="tearDownFirefox"/>
+        </methods>
+      </class> <!-- com.demo.scripts.InteractionDefaultValue_MobileTest -->
+    </classes>
+  </test> <!-- Running Interaction On Firefox(failed) -->
+</suite> <!-- Failed suite [Parallel Execution] -->

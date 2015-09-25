@@ -1,0 +1,9 @@
+{
+  "adminFirst" : "Automation",
+  "adminLast" : "Test",
+  "company" : "qaa1",
+  "email" : "sbeshara@jacada.com",
+  "partnerApplications":["ZENDESK_APPLICATION"],
+  "password" : "Jacada2014!@",
+  "accountType" : "VIVR"
+}
